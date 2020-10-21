@@ -3,10 +3,10 @@ from telegram.ext import Updater,CommandHandler,MessageHandler,Filters
 from Adafruit_IO import Client,Data
 import os
 
-ADAFRUIT_IO_USERNAME = os.getenv('nikhila3010')
+ADAFRUIT_IO_USERNAME = os.getenv('nikhila_3010')
 ADAFRUIT_IO_KEY = os.getenv('aio_dNac079uX9vsWr4Mfgccp4ayhHcV')
 TOKEN = os.getenv('1323642446:AAE1MdzDxZjeynYpTL7I4zFg6W_Pp4cQ0MA')
-aio = Client(nikhila3010,aio_dNac079uX9vsWr4Mfgccp4ayhHcV)
+aio = Client(nikhila_3010,aio_dNac079uX9vsWr4Mfgccp4ayhHcV)
 
 def turnoff(update, context):
   context.bot.send_message(chat_id=update.effective_chat.id, text="Light turned off")
